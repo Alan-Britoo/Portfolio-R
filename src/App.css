@@ -1,0 +1,14 @@
+.foto{
+    height: 300px;
+    width: 370px;
+    border-color: blue magenta;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 70%;
+}
+.info{
+    align-items: center;
+    max-width: 1000px;
+    display: flex;
+    margin-left: 260px;
+}
