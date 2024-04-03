@@ -4,9 +4,7 @@ import Wp2 from "../assets/wp3.png";
 import Gm from "../assets/gmail.svg";
 import Link from "../assets/link.svg";
 
-function Robot() {
-  const [expanded, setExpanded] = useState(false);
-
+function Robot({ expanded, setExpanded }) {
   const toggleOptions = () => {
     setExpanded(!expanded);
   };
@@ -28,6 +26,20 @@ function Robot() {
       alt: "Email",
     },
   ];
+
+  const DelayedItem = ({ children, delay }) => {
+    const [isVisible, setIsVisible] = useState(true);
+
+    React.useEffect(() => {
+      const timeout = setTimeout(() => {
+        setIsVisible(true);
+      }, delay);
+
+      return () => setIsVisible(false);
+    }, [delay]);
+
+    return isVisible ? children : null;
+  };
 
   return (
     <div className="fixed bottom-14 right-9 z-10">
@@ -52,7 +64,7 @@ function Robot() {
         </div>
       )}
       <div
-        className={`w-14 h-14 bg-gradient-to-r from-pink-500 to-blue-600 rounded-full flex items-center justify-center cursor-pointer shadow-lg animate-pulse transform hover:scale-110 transition duration-1000 max-sm:w-[43px]  max-sm:h-[43px] ${
+        className={`w-14 h-14 bg-gradient-to-r from-pink-500 to-blue-600 rounded-full flex items-center justify-center cursor-pointer shadow-lg animate-pulse transform hover:scale-110 transition duration-500 max-sm:w-[43px]  max-sm:h-[43px] ${
           expanded ? "rotate-180" : ""
         }`}
         onClick={toggleOptions}
@@ -66,19 +78,5 @@ function Robot() {
     </div>
   );
 }
-
-const DelayedItem = ({ children, delay }) => {
-  const [isVisible, setIsVisible] = useState(true);
-
-  React.useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsVisible(true);
-    }, delay);
-
-    return () => setIsVisible(false);
-  }, [delay]);
-
-  return isVisible ? children : null;
-};
 
 export default Robot;

@@ -98,75 +98,75 @@ export default function Infoicon() {
           </div>
         </div>
       </div> */}
-      <div class="slider  ">
-        <div class="slide-track gap-[1.5%] flex items-center justify-center ">
-          <div class="slide">
+      <div className="slider  ">
+        <div className="slide-track gap-[1.5%] flex items-center justify-center ">
+          <div className="slide">
             <img src={ht} alt="" className="max-sm:h-[60px] h-[92px]" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={react} alt="" className="max-sm:h-[60px]" />
           </div>
-          <div class="slide ">
+          <div className="slide ">
             <img className=" h-[80px] max-sm:h-[60px]" src={css} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={la} alt="" className="max-sm:h-[60px]" />
           </div>
 
-          <div class="slide flex justify-center items-center">
+          <div className="slide flex justify-center items-center">
             <img src={php} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={js} alt="" className="max-sm:h-[60px]" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img
               src={tw}
               alt=""
               className="flex justify-center items-center w-full"
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={git} alt="" className="max-sm:h-[60px]" />
           </div>
 
-          <div class="slide">
+          <div className="slide">
             <img src={boot} alt="" className="max-sm:h-[60px]" />
           </div>
-          <div class="slide  ">
+          <div className="slide  ">
             <img
               src={gh}
               alt=""
               className="fill-current bg-green-600 rounded-full max-sm:h-[60px] max-sm:w-[60px]"
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={ht} alt="" className="max-sm:h-[60px] h-[92px]" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={react} alt="" className="max-sm:h-[60px]" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img className=" h-[80px] max-sm:h-[60px]" src={css} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={la} alt="" className="max-sm:h-[60px]" />
           </div>
 
-          <div class="slide flex justify-center items-center">
+          <div className="slide flex justify-center items-center">
             <img src={php} alt="" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img src={js} alt="" className="max-sm:h-[60px]" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img
               src={tw}
               alt=""
               className="flex justify-center items-center w-full"
             />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img
               src={git}
               alt=""
@@ -174,10 +174,10 @@ export default function Infoicon() {
             />
           </div>
 
-          <div class="slide">
+          <div className="slide">
             <img src={boot} alt="" className="max-sm:h-[60px]" />
           </div>
-          <div class="slide">
+          <div className="slide">
             <img
               src={gh}
               alt=""

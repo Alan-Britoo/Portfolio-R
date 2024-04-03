@@ -15,10 +15,16 @@ function App() {
     setShowAbout(!showAbout);
   };
 
+  const [robotExpanded, setRobotExpanded] = useState(false);
+
   return (
     <>
       <div className=" bg-[#191919] w-full">
-        <InfoNavbar toggleAbout={toggleAbout} />
+        <InfoNavbar
+          toggleAbout={toggleAbout}
+          toggleRobot={() => setRobotExpanded(!robotExpanded)}
+        />
+
         <section
           id="home"
           className="h-full w-[80%] flex justify-between items-center mt-[10%] text-white mx-auto md:bg-[#191919] lg:bg-[#191919] "
@@ -58,7 +64,7 @@ function App() {
           My Tech Stack
         </h2>
 
-        <p class="w-full text-[#A7A7A7] mt-4 text-2xl text-center mx-auto font-normal leading-7  max-md:text-[20px]">
+        <p className="w-full text-[#A7A7A7] mt-4 text-2xl text-center mx-auto font-normal leading-7  max-md:text-[20px]">
           Technologies I’ve been working with recently
         </p>
 
@@ -80,7 +86,7 @@ function App() {
         <section id="footer" className="py-[2%] w-full max-sm:pb-[3%]">
           <InfoNavbar toggleAbout={toggleAbout} />
         </section>
-        <Robot />
+        <Robot expanded={robotExpanded} setExpanded={setRobotExpanded} />
       </div>
     </>
   );
