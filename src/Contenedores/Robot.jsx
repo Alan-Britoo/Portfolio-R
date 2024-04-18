@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Yo from "../assets/ElVijoRotsen.jpeg";
+import Yo from "../assets/ElVijoRotsen.webp";
 import Wp2 from "../assets/wp3.png";
 import Gm from "../assets/gmail.svg";
 import Link from "../assets/link.svg";

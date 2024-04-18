@@ -3,10 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CardProject from "./CardProject";
-import EcZ from "../assets/ecomerceZapatos.png";
-import ABB from "../assets/AirBnB.png";
+import EcZ from "../assets/ecomerceZapatos.webp";
+import ABB from "../assets/AirBnB.webp";
 import Temp from "../assets/Clima.png";
-import Ges from "../assets/SistemaDGestion.png";
+import Ges from "../assets/SistemaDGestion.webp";
 import Bit from "../assets/Bitacora.png";
 
 function CarouselSlider() {

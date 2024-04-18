@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import InfoNavbar from "./Contenedores/infoNavbar";
-import { NavIcons } from "./Contenedores/navBar";
+
 import Infoicon from "./Contenedores/infoicon";
 import fotoR from "./assets/ElVijoRotsen.webp";
 

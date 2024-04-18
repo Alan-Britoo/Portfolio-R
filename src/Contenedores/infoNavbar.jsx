@@ -1,6 +1,6 @@
 import { NavBar } from "./navBar";
 import icono from "../assets/logo 1.svg";
-import Robot from "./Robot";
+
 import React, { useState } from "react";
 
 export default function InfoNavbar({ toggleAbout, toggleRobot }) {
